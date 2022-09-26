@@ -1,3 +1,4 @@
+from dataclasses import fields
 from django.shortcuts import render
 
 # Create your views here.
@@ -30,3 +31,4 @@ class BlogDeleteView(DeleteView):
     model = Post
     template_name = 'post_delete.html'
     success_url = reverse_lazy('home')
+

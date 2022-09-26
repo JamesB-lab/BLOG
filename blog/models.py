@@ -12,8 +12,16 @@ class Post(models.Model):
     body = models.TextField()
 
     def __str__(self):
-        return self.title
+        return self.body, self.title, self.author
+        
 
     def get_absolute_url(self):
         return reverse("post_detail", args=[str(self.id)])
+
+    def save(self, *args, **kwargs):
+        self.extra_field = "extra field"
+        print(self.body)
+        print(self.title)
+        print(self.author)
+        super().save(*args, **kwargs)
     
