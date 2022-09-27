@@ -70,5 +70,8 @@ class BlogTests(TestCase):
         self.assertEqual(response.status_code, 302)
 
 def test_get_engine():
-    engine = get_engine()
+    try:
+        engine = get_engine()
+    except Exception as exc:
+        assert False, f'test_get-engine raised an exception {exc}'
 
