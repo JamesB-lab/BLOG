@@ -71,5 +71,5 @@ class Post(models.Model):
 
 
 
-        except Exception:
-            print('ERROR CONNECTING TO SQL')
+        except Exception as exc:
+            print(f'ERROR CONNECTING TO SQL:{exc}')
