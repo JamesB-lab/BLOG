@@ -6,9 +6,12 @@ from .views import (
     BlogUpdateView,
     BlogDeleteView,
     AddStencilView,
+    SuccessView,
 )
 
 urlpatterns = [
+    path('stencil/success/', SuccessView.as_view(),
+    name='success'),
     path('stencil/new/', AddStencilView.as_view(),
     name='add_stencil'),
     path('post/<int:pk>/delete/',

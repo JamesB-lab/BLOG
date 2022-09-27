@@ -36,4 +36,10 @@ class AddStencilView(CreateView):
     model = Post
     template_name = 'stencil_new.html'
     fields = ['manufacture_date', 'stencil_number', 'revision', 'ZLNumber', 'material', 'manufacture_number', 'thickness', 'author']
-    success_url = reverse_lazy('home')
+    success_url = reverse_lazy('success')
+
+
+class SuccessView(ListView):
+    model = Post
+    template_name = 'success.html'
+    
