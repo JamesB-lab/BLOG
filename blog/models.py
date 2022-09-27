@@ -45,7 +45,7 @@ class Post(models.Model):
             thickness = stringSplit[6]
 
 
-            mydict = {'DateofManufacture': dateofmanufacture, 'StencilNumber': stencilNumber, 'Revision': revision, 'ZLNumber': ZLNum, 'Material': material, 'ManufacturerSN': manuSN,  'Thickness': thickness}
+            mydict = {'DateofManufacturer': dateofmanufacture, 'StencilNumber': stencilNumber, 'Revision': revision, 'ZLNumber': ZLNum, 'Material': material, 'ManufacturerNumber': manuSN,  'Thickness': thickness}
             
 
             df = pd.DataFrame.from_dict(mydict, orient='index')
