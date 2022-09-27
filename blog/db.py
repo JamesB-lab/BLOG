@@ -1,7 +1,7 @@
 import pandas as pd
 from sqlalchemy import create_engine
 
-def get_engine(self):
+def get_engine(Server, Database, Driver):
         #SQL Connection Windows Authentication#
 
         Server = 'UKC-VM-SQL01'
