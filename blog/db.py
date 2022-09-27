@@ -1,8 +1,8 @@
 import pandas as pd
 from sqlalchemy import create_engine
 
-def get_engine(Server, Database, Driver):
-        #SQL Connection Windows Authentication#
+def get_engine(Server = 'UKC-VM-SQL01', Database = 'Stencil', Driver = 'ODBC Driver 17 for SQL Server'):
+            
 
         Database_con = f'mssql://@{Server}/{Database}?driver={Driver}'
 

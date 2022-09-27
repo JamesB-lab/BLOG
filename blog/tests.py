@@ -4,6 +4,7 @@ from django.test import TestCase
 from django.urls import reverse
 
 from .models import Post
+from .db import get_engine
 
 class BlogTests(TestCase):
 
@@ -67,3 +68,7 @@ class BlogTests(TestCase):
         response = self.client.post(
             reverse('post_delete', args='1'))
         self.assertEqual(response.status_code, 302)
+
+def test_get_engine():
+    engine = get_engine()
+
