@@ -32,3 +32,7 @@ class BlogDeleteView(DeleteView):
     template_name = 'post_delete.html'
     success_url = reverse_lazy('home')
 
+class AddStencilView(CreateView):
+    model = Post
+    template_name = 'stencil_new.html'
+    fields = ['Date of Manufacture', 'Stencil Number', 'Revision', 'ZL Number', 'Material', 'Manufacturer Number', 'Thickness', 'author',]

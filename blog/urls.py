@@ -5,9 +5,12 @@ from .views import (
     BlogCreateView, 
     BlogUpdateView,
     BlogDeleteView,
+    AddStencilView,
 )
 
 urlpatterns = [
+    path('stencil/new/', AddStencilView.as_view(),
+    name='add_stencil'),
     path('post/<int:pk>/delete/',
         BlogDeleteView.as_view(), name='post_delete'),
     path('post/<int:pk>/edit/',
