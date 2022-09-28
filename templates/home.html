@@ -20,7 +20,7 @@
             
         <div class="card">
             <div class="stencil_img">
-                <img src="{% static 'images/stencil.jpg' %}"  alt="stencil" width="70%">
+                <img src="{% static 'images/stencil.jpg' %}"  alt="stencil" width="100%">
             </div>
             <div class="container">
               {% comment %} <h4><b>Stencil Bank</b></h4> {% endcomment %}
@@ -29,6 +29,13 @@
             <div class ="button">
                 <a href="{% url 'add_stencil' %}"><button type="button">Add Stencil +</button></a>
             </div>
+        </div>
+        <div class="info">
+            <p>Important: To add data to the stencil bank you must have Microsoft ODBC Driver 17 for SQL Server installed.<br>
+                This can be downloaded here <a href="https://go.microsoft.com/fwlink/?linkid=2200731">https://go.microsoft.com/fwlink/?linkid=2200731</a> or via Microchip Portal Manager.<br>
+                <br>
+                Additionally, you must have permission granted by IS secuirty. If you do not have access you can request it here: <br> <a href = "https://microchip.service-now.com/sp?id=sc_cat_item&sys_id=884cb90bdb1aff001304c8da0b9619a2&sysparm_category=e15706fc0a0a0aa7007fc21e1ab70c2f">https://microchip.service-now.com/sp?id=sc_cat_item&sys_id=884cb90bdb1aff001304c8da0b9619a2&sysparm_category=e15706fc0a0a0aa7007fc21e1ab70c2f</a>
+
         </div>
     </body>
 </html>
