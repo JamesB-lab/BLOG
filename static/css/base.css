@@ -1,6 +1,6 @@
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 18px;
+    background-color: #FAF9F6;
+    background-image: url("/static/images/bg_dots.png");
 }
 
 header {
@@ -10,8 +10,38 @@ header {
 }
 
 header h1 a {
-    color: red;
+    color: black;
     text-decoration: none;
+    padding-left: 12px;
+}
+
+.card {
+    display: flex;
+    justify-content: right;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    width: 80%;
+    border-color: red;
+    margin: 0 auto; 
+    float: none; 
+    
+
+}
+
+.stencil_img {
+    display: flex;
+    align-content: center;
+    justify-self: center;
+    border-color: aqua;
+    border-width: 10px;
+    width: 100%;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
 }
 
 .nav-left {
@@ -43,5 +73,5 @@ header h1 a {
 }
 
 .post-entry h2 a:hover {
-    color: red;
+    color: black;
 }
