@@ -17,7 +17,7 @@
         <h1><a href="{% url 'home' %}">Add Stencil</a></h1>
     </header>
 <div class ="card_form">
-    <form action="" method="post" class="form" name="name">{% csrf_token %}
+    <form action="" method="post" class="form">{% csrf_token %}
         {{ form.as_p }}
         <input type="submit" value="Save">
     </form>
