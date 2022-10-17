@@ -1,5 +1,6 @@
 from dataclasses import fields
 from django.shortcuts import render
+from .forms import PostForm
 
 # Create your views here.
 
@@ -33,8 +34,13 @@ class BlogDeleteView(DeleteView):
     success_url = reverse_lazy('home')
 
 class AddStencilView(CreateView):
+    form = PostForm
+    mydict = {
+        'form':form
+    }
     model = Post
     template_name = 'stencil_new.html'
+    comment = ['manufacture_date', 'stencil_number', 'revision', 'ZLNumber', 'material', 'manufacture_number', 'thickness', 'author']
     fields = ['manufacture_date', 'stencil_number', 'revision', 'ZLNumber', 'material', 'manufacture_number', 'thickness', 'author']
     success_url = reverse_lazy('success')
 

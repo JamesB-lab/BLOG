@@ -26,8 +26,56 @@ header h1 a {
     margin: 0 auto; 
     float: none; 
     border-radius: 1%;
-    
+}
 
+.card_form {
+    display: flex;
+    justify-content: center;
+    justify-items: right;
+    width: 35%;
+    border-color: black;
+    margin: 0 auto; 
+    float: none; 
+    border-radius: 1%;
+    background-color: whitesmoke;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    align-items: left;
+    justify-content: left;
+    padding: 10%;
+    color: black;
+}
+
+
+
+.success_card {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    border-color: black;
+    margin: 0 auto; 
+    width: auto;
+    margin-top: 200px;
+    margin-right: 30%;
+    margin-left: 20%;
+    float: none; 
+    border-radius: 1%;
+    background-color: whitesmoke;
+
+}
+
+.success_card_text {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: left;
+    margin-right: 20%;
+    margin-left: 20%;
+    float: none; 
 }
 
 .stencil_img {
@@ -96,3 +144,4 @@ header h1 a {
 .clock::-webkit-scrollbar {
     display: none;
 }
+

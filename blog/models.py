@@ -4,6 +4,7 @@ from django.urls import reverse
 import pandas as pd
 from sqlalchemy import create_engine
 from datetime import datetime
+from django import forms
 
 
 class Post(models.Model):
@@ -15,6 +16,7 @@ class Post(models.Model):
     manufacture_number = models.CharField    (max_length=10, default=None)
     thickness = models.CharField    (max_length=5, default=None)
     author = models.CharField (max_length=7, default =None)
+
 
     def __str__(self):
         return self.manufacture_date, self.stencil_number, self.revision, self.ZLNumber, self.material, self.manufacture_number, self.thickness, self.author
